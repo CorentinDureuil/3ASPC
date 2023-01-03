@@ -12,6 +12,6 @@ public class ProductDetails : PageModel
     public void OnGet(int id)
     {
         Message = $"Article {id}";
-        FoundProduct = ProductData.Products.FirstOrDefault(i => i.Id == id);
+        FoundProduct = ProductData.Products.FirstOrDefault(product => product.Id == id);
     }
 }
