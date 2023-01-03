@@ -1,0 +1,29 @@
+@page
+@model FirstPages.Register
+
+@{
+    ViewData["Title"] = "S'inscrire";
+}
+
+
+<div>
+    <h1>S'inscrire pour devenir un beauf ultime !</h1>
+    <form method="post">
+        <table>
+            <tr>
+                <td>Email: </td>
+                <td><input type="email" id="txtEmail" name="Email"/></td>
+            </tr>
+            <tr>
+                <td>Mot de passe: </td>
+                <td><input type="password" id="txtPassword" name="Password"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit" asp-page-handler="Submit"/></td>
+            </tr>
+        </table>
+        <hr/>
+        @Model.RegisterResult
+    </form>
+</div>
