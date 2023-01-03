@@ -1,0 +1,20 @@
+@page
+@model FirstPages.Index
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div>
+    <h1>@Model.Message</h1>
+    @foreach (var item in Model.Products)
+    {
+        <h2>
+            <a asp-page="./ProductDetails" asp-route-id="@item.Id">
+                @Html.DisplayFor(modelItem => item.Name)
+            </a>
+        </h2>
+        <img class="product_img" src="@item.ImageUrl" alt="error">
+        <h4>@Html.DisplayFor(modelItem => item.Price)</h4>
+    }
+</div>

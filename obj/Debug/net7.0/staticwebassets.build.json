@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "ea6DDOZUbBG5qbM3AizdMSG6eUyfeuz7JE2ZBmYhLIM=",
+  "Source": "FirstPages",
+  "BasePath": "_content/FirstPages",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FirstPages/wwwroot",
+      "Source": "FirstPages",
+      "ContentRoot": "/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/wwwroot/",
+      "BasePath": "_content/FirstPages",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/wwwroot/css/style.css",
+      "SourceId": "FirstPages",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/wwwroot/",
+      "BasePath": "_content/FirstPages",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/style.css"
+    },
+    {
+      "Identity": "/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/wwwroot/images/macbook_pro.jpeg",
+      "SourceId": "FirstPages",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/wwwroot/",
+      "BasePath": "_content/FirstPages",
+      "RelativePath": "images/macbook_pro.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/macbook_pro.jpeg"
+    }
+  ]
+}
