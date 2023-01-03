@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/css/style.css"
     },
     {
+      "Id": "/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/wwwroot/images/iphone-13.jpeg",
+      "PackagePath": "staticwebassets/images/iphone-13.jpeg"
+    },
+    {
       "Id": "/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/wwwroot/images/macbook_pro.jpeg",
       "PackagePath": "staticwebassets/images/macbook_pro.jpeg"
     },

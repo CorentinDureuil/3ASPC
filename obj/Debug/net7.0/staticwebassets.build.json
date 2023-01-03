@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ea6DDOZUbBG5qbM3AizdMSG6eUyfeuz7JE2ZBmYhLIM=",
+  "Hash": "Ts0Ef1fnP3tu53J2cK3ZoAZcTtPPWu2A83P7A9kXiIY=",
   "Source": "FirstPages",
   "BasePath": "_content/FirstPages",
   "Mode": "Default",
@@ -32,6 +32,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/style.css"
+    },
+    {
+      "Identity": "/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/wwwroot/images/iphone-13.jpeg",
+      "SourceId": "FirstPages",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/wwwroot/",
+      "BasePath": "_content/FirstPages",
+      "RelativePath": "images/iphone-13.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/iphone-13.jpeg"
     },
     {
       "Identity": "/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/wwwroot/images/macbook_pro.jpeg",

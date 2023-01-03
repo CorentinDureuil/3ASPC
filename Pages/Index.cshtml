@@ -14,7 +14,7 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </a>
         </h2>
-        <img class="product_img" src="@item.ImageUrl" alt="error">
+        <img class="product_img" asp-append-version="true" src="@item.ImageUrl" alt="error">
         <h4>@Html.DisplayFor(modelItem => item.Price)</h4>
     }
 </div>
