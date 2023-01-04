@@ -14,7 +14,7 @@ public class ApplicationDbContext: DbContext
         var serverVersion = new MySqlServerVersion(new Version(8, 0, 28));
 
         optionsBuilder
-            .UseMySql("server=b9bxlfuyjuumvhbrurtw-mysql.services.clever-cloud.com;port=3306;user=u5zvjnhpym4rv0rh;password=a5HHQv4Jw3XaGpnl6o86;database=b9bxlfuyjuumvhbrurtw", serverVersion)
+            .UseMySql("server=Matteo;port=Suce;user=Des;password=Gros;database=Chibrax", serverVersion)
             .UseLoggerFactory(LoggerFactory.Create(b => b
                     .AddConsole()
                     .AddFilter(level => level >= LogLevel.Information)
