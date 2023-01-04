@@ -1,3 +1,4 @@
+using FirstPages.Data;
 using FirstPages.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -7,7 +8,9 @@ namespace FirstPages;
 public class Register : PageModel
 {
     [BindProperty]
-    public RegisterModel User { get; set; }
+    public UserModel User { get; set; }
+
+    private readonly ApplicationDbContext _dbContext = new ApplicationDbContext();
     
     public void OnGet()
     {
@@ -15,8 +18,12 @@ public class Register : PageModel
  
     public void OnPostSubmit()
     {
+
         if (ModelState.IsValid)
         {
+            _dbContext.Users.Add(User);
+            _dbContext.SaveChanges();
+            
             ModelState.AddModelError("User.Email", "Model Valid");
         }
         else

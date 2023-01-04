@@ -1,17 +1,26 @@
 using FirstPages.Data;
 using FirstPages.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 
 namespace FirstPages;
 
 public class ProductDetails : PageModel
 {
-    public string Message { get; set; }
     public Product FoundProduct;
+    
+    private readonly ApplicationDbContext _dbContext = new ApplicationDbContext();
 
-    public void OnGet(int id)
+    public async Task<IActionResult> OnGetAsync(int id)
     {
-        Message = $"Article {id}";
-        FoundProduct = ProductData.Products.FirstOrDefault(product => product.Id == id);
+        FoundProduct = await _dbContext.Products.FirstOrDefaultAsync(p => p.Id == id);
+
+        if (FoundProduct == null)
+        {
+            return NotFound();
+        }
+
+        return Page();
     }
 }

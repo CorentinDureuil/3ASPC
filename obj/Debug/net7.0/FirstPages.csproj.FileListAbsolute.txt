@@ -27,3 +27,14 @@
 /Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/obj/Debug/net7.0/FirstPages.RazorAssemblyInfo.cache
 /Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/obj/Debug/net7.0/FirstPages.RazorAssemblyInfo.cs
 /Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/bin/Debug/net7.0/FirstPages.staticwebassets.runtime.json
+/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/bin/Debug/net7.0/MySqlConnector.dll
+/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/bin/Debug/net7.0/Pomelo.EntityFrameworkCore.MySql.dll
+/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/obj/Debug/net7.0/FirstPages.csproj.CopyComplete
+/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/bin/Debug/net7.0/Humanizer.dll
+/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/bin/Debug/net7.0/Mono.TextTemplating.dll
+/Users/corentindureuil/Documents/SUPINFO/B.ENG 3/3ASPC/ASPC/FirstPages/bin/Debug/net7.0/System.CodeDom.dll
