@@ -1,12 +1,12 @@
 @page
-@model FirstPages.Register
+@model FirstPages.Login
 
 @{
-    ViewData["Title"] = "S'inscrire";
+    ViewData["Title"] = "Se connecter";
 }
 
 <div>
-    <h1>S'inscrire pour devenir un beauf ultime !</h1>
+    <h1>Se connecter</h1>
     <form method="post">
         <div class="mb-3">
             <label class="form-label">Email</label>
@@ -19,12 +19,7 @@
             <span class="text-danger" asp-validation-for="User.Password"></span>
         </div>
         <div class="mb-3">
-            <label class="form-label">Retaper le Mot de passe</label>
-            <input type="password" asp-for="User.VerifyPassword" class="form-control">
-            <span class="text-danger" asp-validation-for="User.VerifyPassword"></span>
-        </div>
-        <div class="mb-3">
-            <input type="submit" value="Submit" asp-page-handler="Submit"/>
-        </div>
-    </form>
+                <input type="submit" value="Submit" asp-page-handler="Submit"/>
+            </div>
+        </form>
 </div>
