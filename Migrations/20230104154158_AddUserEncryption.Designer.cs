@@ -2,6 +2,7 @@
 using FirstPages.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FirstPages.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230104154158_AddUserEncryption")]
+    partial class AddUserEncryption
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -54,6 +57,10 @@ namespace FirstPages.Migrations
                         .IsRequired()
                         .HasColumnType("longtext")
                         .HasColumnName("email");
+
+                    b.Property<string>("Hash")
+                        .HasColumnType("longtext")
+                        .HasColumnName("hash");
 
                     b.Property<string>("Password")
                         .IsRequired()

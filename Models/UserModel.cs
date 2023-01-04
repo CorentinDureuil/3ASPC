@@ -19,4 +19,7 @@ public class UserModel
     [NotMapped]
     [Compare(nameof(Password), ErrorMessage = "Password and Confirmation Password must match.")]
     public string VerifyPassword { get; set; }
+
+    [Column("salt")]
+    public byte[]? Salt { get; set; }
 }

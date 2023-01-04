@@ -13,7 +13,7 @@
     {
         <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-                <img class="card-img-top" asp-append-version="true" src="@item.ImageUrl" alt="error">
+                <img class="card-img-top" asp-append-version="true" src="@Url.Content(item.ImageUrl)" alt="error">
                 <div class="card-body">
                     <p class="card-text">@Html.DisplayFor(modelItem => item.Name)</p>
                     <div class="d-flex justify-content-between align-items-center">

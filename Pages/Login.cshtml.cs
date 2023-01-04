@@ -15,6 +15,7 @@ public class Login : PageModel
     public UserModel UserLogged { get; set; }
     
     private readonly ApplicationDbContext _dbContext = new ApplicationDbContext();
+    private readonly Password _password = new Password();
 
     public void OnGet()
     {
@@ -25,14 +26,16 @@ public class Login : PageModel
     {
         if (ModelState.IsValid)
         {
-            UserLogged = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == User.Email && u.Password == User.Password);
+            UserModel? userWithMail = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == User.Email);
             
-            if (UserLogged == null)
+            if (userWithMail == null) ModelState.AddModelError("User.Email", "Email introuvable.");
+            else
             {
-                ModelState.AddModelError("User.Email", "Email ou mot de passe incorrect");
+                bool samePassword = _password.VerifyPassword(User.Password, userWithMail.Password, userWithMail.Salt);
+
+                if (!samePassword) ModelState.AddModelError("User.Email", "Mot de passe incorrect.");
+                else ModelState.AddModelError("User.Email", "User valide");
             }
-            
-            ModelState.AddModelError("User.Email", "User valide");
         }
 
         return Page();
